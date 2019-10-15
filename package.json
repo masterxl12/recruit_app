@@ -3,29 +3,38 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "^16.10.2",
-    "react-dom": "^16.10.2",
-    "react-scripts": "3.2.0"
+    "antd-mobile": "^2.1.8",
+    "axios": "^0.18.0",
+    "blueimp-md5": "^2.12.0",
+    "cookie-parser": "^1.4.4",
+    "cors": "^2.8.5",
+    "express": "^5.0.0-alpha.7",
+    "js-cookie": "^2.2.0",
+    "mongoose": "^5.7.3",
+    "prop-types": "^15.6.1",
+    "rc-queue-anim": "^1.5.0",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.2.2",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0",
+    "socket.io": "^2.1.0"
+  },
+  "devDependencies": {
+    "babel-plugin-import": "^1.7.0",
+    "less": "^2.7.3",
+    "less-loader": "^4.1.0",
+    "react-app-rewired": "^1.5.2",
+    "react-scripts": "1.1.4",
+    "redux-devtools-extension": "^2.13.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test --env=jsdom",
+    "eject": "react-scripts eject",
+    "client": "serve build"
   },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+  "proxy": "http://localhost:4000"
 }
