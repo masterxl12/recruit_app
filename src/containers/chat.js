@@ -3,13 +3,12 @@ import { NavBar, List, InputItem, Grid, Icon } from 'antd-mobile'
 import { connect } from 'react-redux'
 import QueueAnim from 'rc-queue-anim';
 import { sendMsg, readMsg } from '../redux/actionCreators'
-// import { getUser } from '../redux/actionCreators'
 const Item = List.Item
 class Chat extends Component {
-    // constructor(props) {
-    //     super(props);
-    //     this.state = {}
-    // }
+    constructor(props) {
+        super(props);
+        this.state = {}
+    }
     state = {
         content: '',
         isShow: false // 是否显示表情
@@ -87,7 +86,8 @@ class Chat extends Component {
                 <NavBar
                     className='nav-header'
                     icon={<Icon type='left' />}
-                    onLeftClick={() => this.props.history.goBack()}
+                    // onLeftClick={() => this.context.router.history.goBack()}
+                    onLeftClick={() => this.props.history.push('/')}
                 >
                     {users[targetId].username}
                 </NavBar>
@@ -159,4 +159,7 @@ class Chat extends Component {
         )
     }
 }
+// Chat.contextTypes = {
+//     router: PropTypes.object.isRequired
+// }
 export default connect(state => ({ user: state.user, chat: state.chat }), { sendMsg, readMsg })(Chat);

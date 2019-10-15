@@ -1,5 +1,4 @@
 import React from 'react';
-import figure from './logo.png'
 import figures from './recruit.jpeg'
 import './logo.less'
 // 使用无状态组件

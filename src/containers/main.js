@@ -19,6 +19,7 @@ class Main extends Component {
         super(props);
         this.state = {}
     }
+
     // 组件类和组件对象
     // 给组件对象添加属性
     navList = [

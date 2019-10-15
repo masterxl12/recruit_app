@@ -46,7 +46,7 @@ class Message extends Component {
         const lastMsgs = Object.values(lastMsgObjs)
         // 3. 对数组进行排序（按create_time降序）
         lastMsgs.sort((m1, m2) => m2.create_time - m1.create_time)
-        console.log(lastMsgs)
+        // console.log(lastMsgs)
         return lastMsgs
     }
     render() {

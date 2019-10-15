@@ -66,7 +66,7 @@ async function getMsgList(dispatch,userid) {
         // 分发同步action
         dispatch(receiveMsgList({ chatMsgs, users,userid }))
     }
-    console.log(res.data)
+    // console.log(res.data)
 }
 // 授权成功的同步action
 const authSuccess = (user) => ({ type: AUTH_SUCCESS, data: user })
@@ -172,7 +172,7 @@ export const getUserList = (roletype) => {
     return async dispatch => {
         const res = await reqUserList(roletype)
         const result = res.data
-        console.log(result)
+        // console.log(result)
         if (result.code === 0) {
             dispatch(receiveUserList(result.data))
         }
