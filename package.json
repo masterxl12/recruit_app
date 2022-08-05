@@ -10,7 +10,7 @@
     "cors": "^2.8.5",
     "express": "^5.0.0-alpha.7",
     "js-cookie": "^2.2.0",
-    "mongoose": "^5.7.3",
+    "mongoose": "^5.7.5",
     "prop-types": "^15.6.1",
     "rc-queue-anim": "^1.5.0",
     "react": "^16.3.2",
